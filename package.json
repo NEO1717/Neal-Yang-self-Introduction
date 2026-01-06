@@ -1,0 +1,20 @@
+{
+  "name": "neal-yang-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Neal Yang",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website"
+  ],
+  "author": "Neal Yang",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
