@@ -14,12 +14,19 @@ body {
 
 /* Header */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-left {
@@ -71,6 +78,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 60px 40px;
+    padding-top: 120px;
 }
 
 .home-container {
@@ -166,8 +174,8 @@ body {
 }
 
 .cta-button {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -217,13 +225,332 @@ body {
     text-align: center;
 }
 
-.resume-content,
-.projects-content,
-.contact-content {
+.resume-section .section-title {
+    text-align: left;
+}
+
+/* Autobiography Section Styles */
+.autobiography-section {
+    background-color: #fff;
+}
+
+.autobiography-section .section-title {
+    text-align: left;
+}
+
+.autobiography-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 2;
+    color: #333;
+    text-align: left;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.autobiography-section-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.autobiography-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    border-left: 4px solid #ff6b35;
+    padding-left: 15px;
+}
+
+.autobiography-content p {
+    margin-bottom: 18px;
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.autobiography-content p:last-child {
+    margin-bottom: 0;
+}
+
+.autobiography-list {
+    margin: 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    color: #333;
+    line-height: 2;
+}
+
+.autobiography-list li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Resume Section Styles */
+.resume-section {
+    background-color: #f8f9fa;
+}
+
+.resume-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.resume-row {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.resume-section-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.resume-half {
+    flex: 1;
+}
+
+.resume-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    border-left: 4px solid #ff6b35;
+    padding-left: 15px;
+}
+
+.resume-section-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    padding-left: 20px;
+}
+
+.resume-section-content p {
+    margin: 0;
+}
+
+.resume-section-content ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.resume-section-content li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Skills Three Columns */
+.skills-three-columns {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.skill-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-title {
     font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    border-bottom: 2px solid #ff6b35;
+    padding-bottom: 8px;
+}
+
+.skill-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #333;
+}
+
+.skill-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.skill-tags {
+    font-size: 14px;
     color: #666;
-    text-align: center;
-    padding: 40px 0;
+    line-height: 1.8;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.skill-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tool-category {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tool-category strong {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.tool-category p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    background-color: #f5f5f5;
+}
+
+.projects-section .section-title {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.project-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    border-left: 3px solid #ff6b35;
+    padding-left: 12px;
+}
+
+.project-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #333;
+}
+
+.project-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.project-section p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 968px) {
+    .project-item {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-text {
+        order: 1;
+    }
+
+    .project-image {
+        order: 2;
+    }
+
+    .projects-section .section-title {
+        text-align: center;
+    }
 }
 
 /* Footer */
@@ -318,6 +645,10 @@ body {
         gap: 40px;
     }
 
+    .home-section {
+        padding-top: 140px;
+    }
+
     .greeting {
         font-size: 48px;
     }
@@ -335,5 +666,15 @@ body {
     .footer-copyright {
         text-align: left;
         margin-left: 0;
+    }
+
+    .resume-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .skills-three-columns {
+        flex-direction: column;
+        gap: 30px;
     }
 }
