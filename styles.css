@@ -49,6 +49,19 @@ body {
     color: #333;
 }
 
+.name-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.name-link:hover {
+    opacity: 0.7;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
